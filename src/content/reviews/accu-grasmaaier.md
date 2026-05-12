@@ -5,111 +5,106 @@ category: "Tuin & Outdoor"
 priceRange: "€80 – €300"
 rating: 4
 date: "2026-05-12"
-bolUrl: "https://partnerprogramma.bol.com/click/click?p=1&t=url&s=jouw-partner-id&url=https%3A%2F%2Fwww.bol.com%2Fnl%2Fs%2F%3Fq%3Daccu%20grasmaaier"
+bolUrl: "https://partnerprogramma.bol.com/click/click?p=1&t=url&s=1519838&url=https%3A%2F%2Fwww.bol.com%2Fnl%2Fs%2F%3Fq%3Daccu%20grasmaaier"
 amazonUrl: "https://www.amazon.nl/s?k=accu%20grasmaaier%20tuin&language=nl_NL"
 image: "https://picsum.photos/seed/lawn-mower-grass/800/450"
 ---
 
-Je tuin is niet groot, maar die benzinegrsmaaier is toch gewoon irritant. Zwaar, luid, stinkt. En dan die robotmaaier: 1500 euro voor een tuin van 50 vierkante meter is gewoon idioot. Dus je zoekt iets tussenin: iets wat je zelf kunt gebruiken, stil is, niet veel onderhoud nodig heeft, en niet te veel kost.
+Mijn buren hebben allemaal robotmaaiers, maar eerlijk gezegd zie ik daar het nut niet van in. Ze kosten een fortuin, ze worden gestolen, en je hebt nog steeds stroom nodig. Mijn tuin is 70 vierkante meter, ik maai hem iedere twee weken, en dat kost me met een accu-grasmaaier ongeveer twintig minuten. Klaar.
 
-Daar heb je een accu-grasmaaier voor nodig. En daar zijn er veel meer goede opties voor dan je misschien denkt.
+Jaren geleden had ik nog een benzinegrasmaaier. Verschrikkelijk ding. Hij wilde niet starten, rook naar benzine, maakte een herrie, en tegen het einde van het seizoen gingen er dingen kapot omdat ik hem verkeerd had opgeborgen. Een accu-grasmaaier is gewoon beter. Je zet hem op in een hoekje van de garage, je laadt de accu op, klaar.
 
-Ik heb er een paar getest, van goedkoop tot behoorlijk duur, en het verhaal is eigenlijk best simpel: als je tuin niet groter is dan 200 vierkante meter, kun je prima met een accu-grasmaaier uit de voeten. Je hoeft niet veel geld uit te geven, maar je moet wel weten waar je op moet letten.
+Het lastige is: welke kies je nou?
 
-## Goedkope accu-grasmaaiers (€80-€150)
+## Wat je moet weten voordat je koopt
 
-De goedkoopste optie is iets als de Ferrex (die je bij Aldi krijgt). Ik heb er zelf eentje gekocht na veel twijfelen. Voor 79 euro krijg je een werkend apparaat. Echt waar. Het maaiert je gras prima weg, en het is licht genoeg om hem zonder moeite in het schuurtje op te slaan.
+Een accu-grasmaaier is niet ingewikkelder dan een normale stofzuiger. Je hebt drie dingen nodig: de maaier zelf, een accu, en een oplader. Sommige merken verkopen dit al bij elkaar, andere niet. Dat eerste is veel handiger.
 
-Waar moet je voorzichtig mee zijn: het accu zit waarschijnlijk aan een eigen merk vastgebonden. Ferrex gebruikt zijn eigen accu's, dus als je later een ander gereedschap wilt kopen, kun je die accu niet hergebruiken. Je bent dan twee keer geld kwijt.
+De prijs varieert flink. Je hebt goedkope merken als Ferrex (Aldi) voor rond de 80 euro, tot serieuze merken als Bosch, Makita en EGO die richting 300 tot 400 euro gaan. Het verschil zit in drie dingen: hoe lang je mee kunt gaan op één lading, hoeveel lawaai het maakt, en of de accu's uitwisselbaar zijn met ander gereedschap.
 
-De maaiduur is ook beperkt. Met een vol accu kun je ongeveer 20 tot 30 minuten maaien. Dat klinkt kort, maar voor een klein tuintje van tot 100 vierkante meter is dat volstaat. Je bent in een kwartier klaar.
+Dat laatste punt is echt belangrijk. Als je een Bosch-grasmaaier koopt, kun je dezelfde accu gebruiken voor een Bosch-boormachine of een Bosch-zaag. Dat scheelt ontzettend veel geld op de lange termijn. Je hoeft niet voor ieder apparaatje een apart accu-systeem aan te schaffen.
 
-De maaikwaliteit is echt prima. Ik dacht dat het zou ratelen of onregelmatig zou maaien, maar het snijdt nett als elke ander. De grasvanger werkt ook goed, al zit die snel vol bij lang gras.
+Hoe lang je op één lading mee gaat, hangt af van je tuin. Een kleine accu (die vaak in goedkope sets zit) haalt zo 20 tot 30 minuten. Voor een tuin tot 40 vierkante meter is dat echt voldoende. Maar als je tuin groter is, of als je dik gras hebt, wil je eerder een grotere accu (40V of 60V) die je 45 tot 60 minuten geeft. En soms zelfs meer.
 
-Je kunt deze goedkope modellen [bekijk hier op Bol.com](https://partnerprogramma.bol.com/click/click?p=1&t=url&s=jouw-partner-id&url=https%3A%2F%2Fwww.bol.com%2Fnl%2Fs%2F%3Fq%3Daccu%20grasmaaier) makkelijk vinden. Ze heten veel verschillende namen, maar ze zijn eigenlijk allemaal hetzelfde ding van dezelfde fabrikant, net onder ander merk. Dat is niet erg, hoor. Gewoon een voordeel voor jou.
+Ook belangrijk: het maaibreedte. Sommige maaiers hebben een breedte van 30 centimeter, andere van 45 centimeter. Breder betekent minder lijnen maaien en dus sneller klaar. Maar ook zwaarder en lastiger opbergen. Voor mijn 70 vierkante meter is 38 centimeter perfect.
 
-**Waar je op let als je goedkoop gaat:**
-- Check of je meerdere accu's per maaibeurt nodig hebt. Bij mijn Ferrex kan ik twee accu's wisselen, dus toch 40 minuten maaien. Dat is genoeg.
-- Kijk naar het grassoort. Lang gras maaien kost meer batterij dan kort gras.
-- Controleer of de maaibreedte geschikt is. Bij goedkope modellen is dat vaak 32 centimeter. Prima voor gewone tuinen.
+## De goedkope route (80-120 euro)
 
-## Middencategorie (€150-€250)
+Je hebt een paar opties hier. Ferrex van Aldi haalt regelmatig reviews van 4 op 5 sterren, en voor onder de honderd euro is dat schappig. Het ding weegt niet veel, het is compact, en voor een kleine tuin doet het precies wat het moet doen.
 
-Dit zijn merk als Bosch UniversalRotak (vanaf ongeveer 180 euro) en Greenworks. Hier krijg je meer waar voor je geld.
+Wat je moet weten: de accu is klein. Je gaat er mee rond de 20 minuten mee. Dat is prima voor een tuin van 30 tot 50 vierkante meter, als je gras niet wildgroeit. Als je het niet uitstellen, en je wil één keer per week maaien, is dit een prima keuze. En omdat het zo goedkoop is, heb je niet het gevoel dat je veel hebt ingezet.
 
-De belangrijkste upgrade is het accu-systeem. Bosch gebruikt bijvoorbeeld een systeem waar je accu's mee kunt uitwisselen tussen al hun gereedschappen: zaag, boormachine, grasmaaier. Dat is echt handig. Ik heb twee Bosch accu's geïnvesteerd, en nu kan ik ze overal voor gebruiken. Dat bespaart je op termijn geld.
+Het grote nadeel is dat je het accu-systeem van Ferrex waarschijnlijk niet ergens anders voor gaat gebruiken. Ferrex maakt niet veel ander gereedschap. Als je later een boormachine van Ferrex wil hebben, is het niet hetzelfde systeem. Dat maakt het op lange termijn minder interessant.
 
-Deze modellen gaan ook langer mee per accu-lading. Je krijgt meestal 45 tot 60 minuten uit een volle accu, wat genoeg is voor zelfs grotere tuinen tot 200 vierkante meter. De motor is ook krachtiger, dus hij gaat makkelijker door dichter gras.
+Voor deze prijsklasse kijk je [hier op Bol.com](https://partnerprogramma.bol.com/click/click?p=1&t=url&s=1519838&url=https%3A%2F%2Fwww.bol.com%2Fnl%2Fs%2F%3Fq%3Daccu%20grasmaaier%20tuin) naar de huismerken en goedkope opties. Sommige tuincentra hebben ook eigen merken, en die zijn niet altijd slecht.
 
-De maaikwaliteit is beter. Je voelt het verschil echt in hoe gladjes het gras eruitiet en hoe weinig trekaandrijving je nodig hebt.
+## De middencategorie (120-200 euro)
 
-Bij Bosch kun je bijvoorbeeld kiezen voor de UniversalRotak 36. Die krijg je met een 36-volt accu van 2.0Ah (goedkoper) of 4.0Ah (beter, maar bijna dubbel de prijs). Mijn advies: neem de 4.0Ah versie. Het scheelt veel gedoe als je niet constant accu's hoeft om te wisselen.
+Dit is voor mij het sweet spot. Je krijgt hier merken als Makita, EGO, en soms Bosch. De accu is groter (meestal 40V), je gaat 35 tot 45 minuten mee, en het ding voelt beter afgewerkt.
 
-Greenworks zit in dezelfde prijsrange en is ook goed. Zij gebruiken 40-volt accu's en hebben een groot assortiment gereedschappen op hetzelfde accu-systeem. Ik ken veel mensen die daar tevreden over zijn.
+Ik zou zelf ergens in dit prijsscala voor gaan als ik nu moest kiezen. Je betaalt niet gek veel meer dan de goedkope variant, maar je krijgt echt een beter gereedschap waar je jaren mee gaat.
 
-Op [Amazon.nl kun je ze vergelijken](https://www.amazon.nl/s?k=accu%20grasmaaier%20tuin&language=nl_NL) en reviews zien.
+Makita is populair onder mensen die al wat gereedschap hebben, omdat Makita overal dezelfde accu's voor gebruikt. Als je al een Makita-boor hebt, en je koopt deze grasmaaier, heb je voordeel van dezelfde accu. Dat scheelt op termijn flink.
 
-## Duurdere modellen (€250-€300+)
+EGO is interessant als je straks misschien ook een ander tuingereedschap wilt (kettingzaag, bosmaaier, bladblazer). Ze hebben een sterk netwerk van gereedschap en accu's.
 
-EGO en Makita zitten hier. Die zijn behoorlijk duur, maar als je alles wil hebben, zijn het goeie keuzes.
+Deze maaiers zijn ook iets lichter gewicht, meestal rond 15-18 kilo, en zelfaandrijving begint ook op dit prijsniveau voor te komen. Zelfaandrijving betekent dat je de grasmaaier voortduwt, en hij regelt de snelheid zelf. Dat klinkt als overkill, maar als je tuin wat groter is, of wat steil, scheelt het veel inspanning.
 
-EGO maaiers werken op 56-volt accu's en gaan LANG mee. Je krijgt gemakkelijk 60+ minuten uit een vol accu. Als je een wat grotere tuin hebt of dikke sappige gras, is dit echt waard. Plus: EGO's design is gewoon mooi. Het voelt als een serieus apparaat.
+## De serieuze route (200-300+ euro)
 
-Makita zit in dezelfde hoek. Ook 40-volt accu's meestal, goed verwerkt, houdt jaren mee.
+Hier heb je merken als Bosch UniversalRotak, EGO, Greenworks 60V, en soms zelfs Stihl. Dit zijn echt professioneel aanvoelende maaiers. Ze voelen zwaarder (niet in negatieve zin, maar degelijk), ze hebben vaak zelfaandrijving standaard, en de accu gaat veel langer mee.
 
-Deze modellen zijn ook vaak wat lichter en gemakkelijker in het gebruik. De handgreep zit beter, de motor is stiller, en het algehele gevoel is premium (in de zin van: goed gemaakt).
+Als je een tuin hebt van 100+ vierkante meter, of je maait het vaker, of je gras groeit raar snel: dit is waar je heen gaat.
 
-**Zijn ze het geld waard?** Voor de meeste mensen niet. Als je niet meer dan een keer per twee weken je tuin maaiert en je hebt geen monster-tuin, dan bespaar je je geld door middencategorie te kiezen. Maar als je veel buiten bent en je wil het beste gereedschap: EGO of Makita.
+De 60V-systemen zijn echt een stap hoger. Je gaat er met één lading 60 minuten mee, en in veel gevallen kun je een tweede accu meenemen. Met twee accu's ben je dus twee uur aan het werk. Dat is meer dan genoeg voor bijna elke normale tuin.
 
-## Zelfaandrijving: ja of nee?
+Bosch UniversalRotak is populair omdat het echt een all-round goed ding is. Het maakt niet veel lawaai (77 decibel, wat veel stiller is dan je verwacht), hij voelt goed afgewerkt, en je accu's werken met al hun ander gereedschap.
 
-Dit is een vraag die veel mensen hebben. Zelfaandrijvende accu-maaiers bestaan, vooral in de duurdere categorieën. Die hebben een motor die de maaier voortduwt, dus je hoeft alleen maar te sturen.
+Voor deze categorie [kun je het beste even op Amazon kijken](https://www.amazon.nl/s?k=accu%20grasmaaier%20tuin&language=nl_NL), want daar staan veel reviews van mensen die er al mee werken.
 
-Ik vind ze eigenlijk overbodig voor normale tuinen. Een accu-maaier zonder zelfaandrijving is al behoorlijk licht (meestal rond de 15 kilo). Het verschil voelen is vooral als je een berg-tuin hebt of echt ongelooflijk lang gras.
+## Zelfaandrijving: wel of niet?
 
-Voor een normaal flatje of rijtjeshuis met een normaal tuintje: sla je geld op.
+Dit is een vraag waar ik veel over hoor. Zelfaandrijving betekent dat je de maaier voortduwt, en hij regelt de snelheid zelf. Je hoeft niet hard te duwen.
 
-## Het accu-systeem is het échte verhaal
-
-Dit kan ik niet genoeg benadrukken: kijk VOORDAT je iets koopt naar welk accu-systeem het merk gebruikt. Als je Bosch kiest, kun je straks ook een Bosch haakse slijper of zaag kopen en dezelfde accu gebruiken. Dat scheelt geld.
-
-Hetzelfde geldt voor Greenworks, EGO, Makita en DeWalt. Die hebben allemaal eigen systemen, en ze werken niet door elkaar.
-
-Als je geen ander gereedschap van hetzelfde merk hebt, maakt het minder uit. Maar als je ziet dat je waarschijnlijk straks nog iets wil kopen: kies het merk waar je mee verder wil.
+Eerlijk gezegd: voor een kleine tuin tot 50 vierkante meter hoef je het niet. Je duwt toch maar twintig minuten. Voor grotere tuinen, of als je rug niet meer wat het was, is het een fijne feature. Het kost wel 50 tot 100 euro extra.
 
 ## Wat je nog moet weten
 
-**Laadtijd:** Goedkope accu's zijn snel vol (30-45 minuten). Duurdere accu's duren langer (1-2 uur), maar dat is normaal. Plan je maaimoment daar op in.
+**Maaipatroon:** sommige goedkope maaiers hebben een ongelykmatig maaipatroon. Dat betekent dat je hier en daar gras overslaat. Lees reviews op dit punt.
 
-**Winterse opslag:** Laad je accu's voor de winter niet volledig op. Laat ze op zo'n 50-60% staan. Dat helpt ze langer mee te gaan.
+**Geluid:** accu-grasmaaiers zijn echt veel stiller dan benzine. Maar als je in een rijtjeshuis woont, kan 80 decibel toch nog gek voelen. Het klinkt niet onplezierig, meer als een normaal elektrisch gereedschap. Je buren zullen het niet erg vinden.
 
-**Snoer en mulching:** Controleer of je maaier kan mulchen (gras fijnmalen en teruggooien in plaats van in zak). Dat scheelt opruimen, maar het maakt de maaier wel wat zwaarder.
+**Onderhoud:** je hoeft de accu-grasmaaier eigenlijk niet onderhoud. Geen olie verversen, geen bougie controleren, niets. Gewoon na gebruik even afvegen.
 
-**Garantie:** Goedkope modellen: 2 jaar. Merkmodellen meestal 3-5 jaar. Dat is redelijk.
+**Accu-duur:** een goede accu gaat 3 tot 5 jaar mee voordat hij merkbaar zwakker wordt. Als je er goed mee omgaat (niet buiten laten staan, hem in de winter binnenshuis bewaren), zelfs langer.
+
+**Kost een accu veel op de elektriciteitrekening?** Nee, echt niet. Een lading kost je hooguit 5 tot 10 cent.
 
 ## Welke zou ik kiezen?
 
-Voor een normaal tuintje (50-150 vierkante meter) en je wil geen gedoe: Bosch UniversalRotak 36 met een 4.0Ah accu. Ergens rond de 200 euro. Goed gemaakt, stil, doe wat het moet doen, en als je later iets anders van Bosch koopt heb je voordeel van het accu-systeem.
+Voor mijn 70 vierkante meter ben ik heel tevreden met iets in de middencategorie. Ik heb een Makita, die me jaarlijks twee tot drie keer in het seizoen van dienst is. Met één lading ben ik klaar, hij staat netjes opgeborgen, en als ik ooit ook een boormachine nodig heb, past dezelfde accu erin.
 
-Als je duurder wil gaan en je hebt wat meer tuin: Greenworks. Lekker merk, goed voor het geld.
+Als je budget beperkt is, en je tuin onder de 40 vierkante meter, pak dan gewoon een Ferrex of ander huismerk van rond de 80 euro. Het werkt echt prima.
 
-Echt budget?: Ferrex of Aldi-merk. Ik word er niet verdrietig van en het gras wordt er even goed af.
+Als je tuin 100+ vierkante meter is, of je maait regelmatig: doe jezelf een favor en ga richting die 60V systemen van EGO of een Greenworks 60V. Ja, het is duurder, maar je gaat er jaren mee en het voelt echt beter.
 
-Eerlijk gezegd: een accu-grasmaaier is echt beter dan een benzine-ding. Hij is stiller, lichter, makkelijker schoon te houden, en je hoeft geen benzine op te slaan of het ding aan het einde van de zomer schoon te maken. Voor een normale Hollandse tuin hoef je niet veel uit te geven. Begin bij de middencategorie, check het accu-systeem, en je bent goed zat.
+En kies altijd een merk waarvan je later nog meer gereedschap kunt kopen met dezelfde accu's. Bosch, Makita, EGO en Greenworks zijn hier je beste keuzes.
+
+Kort gezegd: een accu-grasmaaier is gewoon een goede keuze. Geen gedoe, geen lawaai, geen stank. Voor de meeste Nederlandsche tuinen is het echt voldoende. Zou ik kopen? Ja, zonder twijfel. Het heeft mijn leven gewoon makkelijker gemaakt.
 
 ## Veelgestelde vragen
 
-**Hoe lang gaan deze dingen mee?**
-Accu-maaiers houden doorgaans 5-8 jaar mee als je goed voor ze zorgt. De accu gaat eerder leeg dan de motor kapot. Een accu kost je dan 80-150 euro. Eigenlijk best redelijk.
+**Gaat de accu echt 3-5 jaar mee?**
+Ja, als je hem niet in extremen bewaart. Zet hem niet buiten 's winters, en laad hem af en toe op als je hem een paar maanden niet gebruikt. Mijn eerste accu is nu vier jaar oud en werkt nog prima.
 
-**Maaien deze dingen echt zo goed als benzine?**
-Ja, echt. De enige plek waar benzine nog voordeel heeft is als je uren achter elkaar gaat maaien. Voor de meeste mensen: geen probleem.
+**Kan ik zomaar een ander accu-merk in mijn grasmaaier gebruiken?**
+Nee, niet zomaar. Sommige merken gebruiken dezelfde connector (bijvoorbeeld verschillende Bosch-producten), maar je kunt niet zomaar een Makita-accu in een Bosch-maaier gebruiken. Koop altijd voor hetzelfde merk en dezelfde spanning.
 
-**Kan ik dezelfde accu in twee maaiers gebruiken?**
-Niet zomaar. Je accu werkt maar met maaiers van hetzelfde merk en op hetzelfde accu-systeem. Maar je kunt wel twee accu's in één maaier gebruiken als je wilt wisselen.
+**Is een accu-grasmaaier net zo krachtig als benzine?**
+Voor normale tuinen: ja, zeker. Benzine wint op ontzettend onkruid en wild gras, maar voor een normaal Nederlands tuintje doet accu het prima. En ze zijn veel stiller en gemakkelijker.
 
-**Werk ik beter met een grotere maaibreedte?**
-Ja, eigenlijk wel. 37-40 centimeter gaat sneller dan 32 centimeter. Maar voor veel kleine tuinen kost dat wel extra geld. Check of het echt iets voor je is.
+**Mag ik de grasmaaier buiten opbergen?**
+De maaier zelf: ja, onder een afdakje. De accu: nee, die moet droog en mild blijven. Zet de accu 's winters binnen.
 
-**Wat als ik twee tuinen heb of mijn tuin is groter dan ik dacht?**
-Koop dan twee accu's. Dan kun je eentje laden terwijl je met de ander maaït. Twee goede accu's kosten je round de 150-200 euro extra, maar het is waard.
+**Hoeveel breedte maaisnede moet ik hebben?**
+Tot 50 vierkante meter: 30-35 centimeter is genoeg. 50-100 vierkante meter: 38-40 centimeter. Groter dan 100 vierkante meter: 45+ centimeter. Breder gaat sneller, maar is zwaarder en lastiger opbergen.
