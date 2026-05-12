@@ -9,6 +9,7 @@
     "generate": "node generate.js"
   },
   "dependencies": {
+    "@astrojs/sitemap": "^3.7.2",
     "@astrojs/tailwind": "^5.1.0",
     "@tailwindcss/typography": "^0.5.19",
     "astro": "^4.16.0",
