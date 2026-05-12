@@ -1,0 +1,51 @@
+---
+export interface Props {
+  title: string;
+  description: string;
+  slug: string;
+  priceRange: string;
+  rating: number;
+  category: string;
+  date: string;
+  image?: string;
+}
+
+const { title, description, slug, priceRange, rating, category, date, image } = Astro.props;
+
+const stars = '★'.repeat(Math.round(rating)) + '☆'.repeat(5 - Math.round(rating));
+const formattedDate = new Date(date).toLocaleDateString('nl-NL', { day: 'numeric', month: 'long', year: 'numeric' });
+---
+
+<a href={`/reviews/${slug}`} class="group block border border-gray-100 rounded-2xl overflow-hidden hover:border-brand-200 hover:shadow-md transition-all">
+  {image && (
+    <div class="relative overflow-hidden h-48 bg-gray-100">
+      <img
+        src={image}
+        alt={title}
+        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+        loading="lazy"
+      />
+      <span class="absolute top-3 left-3 text-xs font-medium bg-white/90 text-gray-600 px-2 py-1 rounded-full">
+        {category}
+      </span>
+    </div>
+  )}
+  <div class="p-5">
+    {!image && (
+      <span class="text-xs font-medium bg-gray-100 text-gray-500 px-2 py-1 rounded-full mb-2 inline-block">
+        {category}
+      </span>
+    )}
+    <h2 class="font-semibold text-lg text-gray-900 group-hover:text-brand-700 transition-colors leading-tight mb-2">
+      {title}
+    </h2>
+    <p class="text-gray-600 text-sm leading-relaxed mb-4">{description}</p>
+    <div class="flex items-center justify-between text-sm">
+      <span class="text-brand-600 font-medium">{priceRange}</span>
+      <div class="flex items-center gap-2 text-gray-400">
+        <span class="text-yellow-400 text-xs">{stars}</span>
+        <span class="text-xs">{formattedDate}</span>
+      </div>
+    </div>
+  </div>
+</a>

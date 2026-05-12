@@ -1,0 +1,21 @@
+{
+  "name": "proefkonijn",
+  "type": "module",
+  "version": "0.1.0",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "generate": "node generate.js"
+  },
+  "dependencies": {
+    "@astrojs/tailwind": "^5.1.0",
+    "@tailwindcss/typography": "^0.5.19",
+    "astro": "^4.16.0",
+    "tailwindcss": "^3.4.0"
+  },
+  "devDependencies": {
+    "@anthropic-ai/sdk": "^0.39.0",
+    "dotenv": "^16.4.0"
+  }
+}

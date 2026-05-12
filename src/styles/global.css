@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Review artikel styling */
+.review-content {
+  @apply text-gray-800 leading-relaxed;
+}
+
+.review-content h1 { @apply text-3xl font-bold text-gray-900 mt-10 mb-4; }
+.review-content h2 { @apply text-xl font-semibold text-gray-900 mt-8 mb-3; }
+.review-content h3 { @apply text-lg font-semibold text-gray-900 mt-6 mb-2; }
+
+.review-content p { @apply mb-4; }
+
+.review-content ul { @apply list-disc pl-6 mb-4 space-y-1; }
+.review-content ol { @apply list-decimal pl-6 mb-4 space-y-1; }
+.review-content li { @apply text-gray-700; }
+
+.review-content a {
+  @apply text-brand-600 no-underline border-b border-brand-200 hover:border-brand-600 transition-colors;
+}
+
+.review-content strong { @apply font-semibold text-gray-900; }
+
+.review-content blockquote {
+  @apply border-l-4 border-brand-200 pl-4 italic text-gray-600 my-6;
+}
+
+.review-content table {
+  @apply w-full border-collapse mb-6 text-sm;
+}
+.review-content th {
+  @apply bg-gray-50 font-semibold text-gray-700 px-4 py-2 text-left border border-gray-200;
+}
+.review-content td {
+  @apply px-4 py-2 border border-gray-100 text-gray-700;
+}
+.review-content tr:nth-child(even) td { @apply bg-gray-50/50; }
+
+.review-content hr { @apply border-gray-100 my-8; }
+
+.review-content code {
+  @apply bg-gray-100 text-gray-800 px-1.5 py-0.5 rounded text-sm font-mono;
+}

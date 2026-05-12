@@ -1,0 +1,113 @@
+---
+import Layout from '../layouts/Layout.astro';
+import ProductCard from '../components/ProductCard.astro';
+
+const reviewModules = import.meta.glob('../content/reviews/*.md', { eager: true });
+
+const reviews = Object.entries(reviewModules)
+  .map(([filepath, mod]: [string, any]) => ({
+    slug: filepath.split('/').pop().replace('.md', ''),
+    ...mod.frontmatter,
+  }))
+  .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+
+const featured = reviews[0];
+const rest = reviews.slice(1);
+---
+
+<Layout title="Eerlijke productreviews" description="Proefkonijn.nl — eerlijke productreviews van Niek. Geen bullshit, gewoon wat werkt. Tuin, outdoor, en meer." wide={true}>
+
+  <!-- Hero -->
+  <div class="mb-8">
+    <h1 class="text-4xl font-bold text-gray-900 mb-3 leading-tight">
+      Eerlijke reviews,<br />zonder gedoe.
+    </h1>
+    <p class="text-gray-500 text-lg leading-relaxed max-w-xl">
+      Ik test producten en vertel gewoon wat ik er van vind.
+      Geen tierlijsten, geen marketingtaal. Gewoon: zou ik het zelf kopen of niet.
+    </p>
+  </div>
+
+  <!-- Stats balk -->
+  <div class="flex flex-wrap gap-6 mb-10 py-5 border-y border-gray-100">
+    <div class="flex items-center gap-2 text-sm text-gray-600">
+      <span class="text-brand-600 font-bold text-lg">{reviews.length}</span>
+      producten getest
+    </div>
+    <div class="flex items-center gap-2 text-sm text-gray-600">
+      <span class="text-green-500 font-bold text-lg">✓</span>
+      Geen gesponsorde content
+    </div>
+    <div class="flex items-center gap-2 text-sm text-gray-600">
+      <span class="text-yellow-400 font-bold text-lg">★</span>
+      Altijd een eerlijk eindoordeel
+    </div>
+    <div class="flex items-center gap-2 text-sm text-gray-600">
+      <span class="text-brand-600 font-bold text-lg">→</span>
+      Bol.com + Amazon vergeleken
+    </div>
+  </div>
+
+  {reviews.length === 0 ? (
+    <div class="text-center py-20 text-gray-400">
+      <p class="text-4xl mb-4">🐇</p>
+      <p>Reviews worden gegenereerd, even geduld...</p>
+      <p class="text-sm mt-2">Voer <code class="bg-gray-100 px-2 py-1 rounded">npm run generate</code> uit.</p>
+    </div>
+  ) : (
+    <div>
+      <!-- Uitgelichte review -->
+      {featured && (
+        <div class="mb-8">
+          <p class="text-xs font-semibold text-brand-600 uppercase tracking-wider mb-3">Nieuwste review</p>
+          <a href={`/reviews/${featured.slug}`} class="group block rounded-2xl overflow-hidden border border-gray-100 hover:border-brand-200 hover:shadow-lg transition-all md:flex">
+            {featured.image && (
+              <div class="md:w-2/5 h-56 md:h-auto overflow-hidden bg-gray-100 shrink-0">
+                <img
+                  src={featured.image}
+                  alt={featured.title}
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+            )}
+            <div class="p-6 md:p-8 flex flex-col justify-center">
+              <span class="text-xs font-medium bg-gray-100 text-gray-500 px-2 py-1 rounded-full mb-3 inline-block w-fit">
+                {featured.category}
+              </span>
+              <h2 class="text-2xl font-bold text-gray-900 group-hover:text-brand-700 transition-colors mb-3 leading-tight">
+                {featured.title}
+              </h2>
+              <p class="text-gray-500 leading-relaxed mb-4">{featured.description}</p>
+              <div class="flex items-center gap-4">
+                <span class="text-brand-600 font-semibold">{featured.priceRange}</span>
+                <span class="text-yellow-400">{'★'.repeat(Math.round(featured.rating))}{'☆'.repeat(5 - Math.round(featured.rating))}</span>
+                <span class="text-brand-600 text-sm font-medium group-hover:underline">Lees review →</span>
+              </div>
+            </div>
+          </a>
+        </div>
+      )}
+
+      <!-- Overige reviews in grid -->
+      {rest.length > 0 && (
+        <div>
+          <p class="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-4">Alle reviews</p>
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+            {rest.map(review => (
+              <ProductCard
+                title={review.title}
+                description={review.description}
+                slug={review.slug}
+                priceRange={review.priceRange}
+                rating={review.rating}
+                category={review.category}
+                date={review.date}
+                image={review.image}
+              />
+            ))}
+          </div>
+        </div>
+      )}
+    </div>
+  )}
+</Layout>
