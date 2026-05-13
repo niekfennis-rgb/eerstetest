@@ -7,7 +7,7 @@ rating: 3
 date: "2026-05-12"
 bolUrl: "https://partnerprogramma.bol.com/click/click?p=1&t=url&s=1519838&url=https%3A%2F%2Fwww.bol.com%2Fnl%2Fs%2F%3Fq%3Dopblaasbare%20jacuzzi%20buiten"
 amazonUrl: "https://www.amazon.nl/s?k=opblaasbare%20jacuzzi%20hot%20tub&language=nl_NL"
-image: "https://media.s-bol.com/BW9RV6By7Xyk/oYwZ3WY/550x597.jpg"
+image: "https://media.s-bol.com/x5NKB2ko3WE3/ERVO1Om/550x500.jpg"
 ---
 
 Je vrienden hebben er eentje gekocht, jij ziet de foto's voorbijkomen op Instagram, en nu denk je: waarom eigenlijk niet? Een opblaasbare jacuzzi in de tuin, bubbels, warm water, zomer 2024. Lijkt fantastisch totdat je je afvraagt: hoe werkt dit eigenlijk, hoeveel geld kost het, en gaat het echt 5 jaar mee of staat het in september alweer leeg?

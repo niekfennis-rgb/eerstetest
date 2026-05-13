@@ -67,7 +67,7 @@ Merken om naar te kijken: Hartman, Taste by 4 Seasons, of goede Bol-sets van Roy
     rating: 5,
     bolQuery: 'kamado bbq',
     amazonQuery: 'kamado grill keramisch',
-    image: 'https://media.s-bol.com/OLqQG6X211OY/nx3nR64/535x840.jpg',
+    image: 'https://media.s-bol.com/NBQEmrrpvG2D/PNQwElw/550x550.jpg',
     description: 'Keramische kamado grill, waarom iedereen erover praat en of je er echt een moet hebben.',
     context: `
 BBQ seizoen loopt op volle toeren in mei/juni. Kamado-grills (Big Green Egg, Kamado Joe,
@@ -125,7 +125,7 @@ niet voor echte verlichting. Verwacht geen wonderen van een set van €20.
     rating: 3,
     bolQuery: 'opblaasbare jacuzzi buiten',
     amazonQuery: 'opblaasbare jacuzzi hot tub',
-    image: 'https://media.s-bol.com/BW9RV6By7Xyk/oYwZ3WY/550x597.jpg',
+    image: 'https://media.s-bol.com/x5NKB2ko3WE3/ERVO1Om/550x500.jpg',
     description: 'Elke zomer nieuw populair, elke zomer dezelfde problemen. Wat je moet weten voor je er een koopt.',
     context: `
 De opblaasbare hot tub is elk jaar een hit. Goedkoopste optie: Lay-Z-Spa (€200-400),

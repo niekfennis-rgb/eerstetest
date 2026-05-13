@@ -7,7 +7,7 @@ rating: 5
 date: "2026-05-12"
 bolUrl: "https://partnerprogramma.bol.com/click/click?p=1&t=url&s=1519838&url=https%3A%2F%2Fwww.bol.com%2Fnl%2Fs%2F%3Fq%3Dkamado%20bbq"
 amazonUrl: "https://www.amazon.nl/s?k=kamado%20grill%20keramisch&language=nl_NL"
-image: "https://media.s-bol.com/OLqQG6X211OY/nx3nR64/535x840.jpg"
+image: "https://media.s-bol.com/NBQEmrrpvG2D/PNQwElw/550x550.jpg"
 ---
 
 Je wil binnenkort een lange mid-week BBQ doen, vrienden uitnodigen, misschien wat vlees langer op het vuur houden. Je scrollt langs wat filmpjes op Instagram en ineens zie je overal die ronde keramische dingen: kamado-grills. Het ziet er fancy uit, iedereen op TikTok lijkt er mee bezig, en je vraagt je af: moet ik dit echt hebben?
