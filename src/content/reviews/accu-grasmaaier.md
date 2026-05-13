@@ -7,7 +7,7 @@ rating: 4
 date: "2026-05-12"
 bolUrl: "https://partnerprogramma.bol.com/click/click?p=1&t=url&s=1519838&url=https%3A%2F%2Fwww.bol.com%2Fnl%2Fs%2F%3Fq%3Daccu%20grasmaaier"
 amazonUrl: "https://www.amazon.nl/s?k=accu%20grasmaaier%20tuin&language=nl_NL"
-image: "https://picsum.photos/seed/lawn-mower-grass/800/450"
+image: "https://media.s-bol.com/m8gMwvqz2Jvp/zv0rP15/550x575.jpg"
 ---
 
 Mijn buren hebben allemaal robotmaaiers, maar eerlijk gezegd zie ik daar het nut niet van in. Ze kosten een fortuin, ze worden gestolen, en je hebt nog steeds stroom nodig. Mijn tuin is 70 vierkante meter, ik maai hem iedere twee weken, en dat kost me met een accu-grasmaaier ongeveer twintig minuten. Klaar.

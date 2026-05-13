@@ -7,7 +7,7 @@ rating: 4
 date: "2026-05-12"
 bolUrl: "https://partnerprogramma.bol.com/click/click?p=1&t=url&s=1519838&url=https%3A%2F%2Fwww.bol.com%2Fnl%2Fs%2F%3Fq%3Drobotmaaier"
 amazonUrl: "https://www.amazon.nl/s?k=robotmaaier%20kleine%20tuin&language=nl_NL"
-image: "https://picsum.photos/seed/robot-lawn-garden/800/450"
+image: "https://media.s-bol.com/751DAjMoN3pj/KZQPrZn/550x540.jpg"
 ---
 
 # Robotmaaier voor kleine tuin: loont het echt?

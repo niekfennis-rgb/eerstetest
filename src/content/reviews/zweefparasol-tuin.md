@@ -7,7 +7,7 @@ rating: 4
 date: "2026-05-12"
 bolUrl: "https://partnerprogramma.bol.com/click/click?p=1&t=url&s=1519838&url=https%3A%2F%2Fwww.bol.com%2Fnl%2Fs%2F%3Fq%3Dzweefparasol"
 amazonUrl: "https://www.amazon.nl/s?k=zweefparasol%20tuin&language=nl_NL"
-image: "https://picsum.photos/seed/parasol-garden-sun/800/450"
+image: "https://media.s-bol.com/85BOvQoxrkzo/86XBJXj/550x412.jpg"
 ---
 
 Je hebt hem eindelijk gekocht: die mooie zweefparasol. Hij staat prachtig in je tuin, de schaduw valt precies goed, en je denkt: dit gaat jaren meegaan. Twee weken later steekt het plotseling uit het niets op. Een windvlaag. Je parasol schiet omhoog als een kaatsjeball, en vlak daarna ligt hij omgekeerd op je tegels. Scherm gescheurd, frame gebogen. Kost je 150 euro aan reparatie.

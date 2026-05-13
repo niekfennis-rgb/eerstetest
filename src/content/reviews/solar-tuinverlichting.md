@@ -7,7 +7,7 @@ rating: 3
 date: "2026-05-12"
 bolUrl: "https://partnerprogramma.bol.com/click/click?p=1&t=url&s=1519838&url=https%3A%2F%2Fwww.bol.com%2Fnl%2Fs%2F%3Fq%3Dsolar%20tuinverlichting%20set"
 amazonUrl: "https://www.amazon.nl/s?k=solar%20tuinverlichting%20buiten&language=nl_NL"
-image: "https://picsum.photos/seed/garden-lights-solar/800/450"
+image: "https://media.s-bol.com/YGx36JZBZg4n/G5zVLD7/550x550.jpg"
 ---
 
 Je hebt die leuke solar lampen in de tuin gezet, ze laden overdag op en 's avonds gaan ze vanzelf aan. Best wel fijn idee. Maar dan kom je volgende zomer je tuin weer in en... niets. Ze doen het niet meer. Of ze gaan wel aan, maar het is zo zwak dat je er niets mee kunt zien.

@@ -7,7 +7,7 @@ rating: 4
 date: "2026-05-12"
 bolUrl: "https://partnerprogramma.bol.com/click/click?p=1&t=url&s=1519838&url=https%3A%2F%2Fwww.bol.com%2Fnl%2Fs%2F%3Fq%3Dloungeset%20tuin"
 amazonUrl: "https://www.amazon.nl/s?k=loungeset%20tuin%20buiten&language=nl_NL"
-image: "https://picsum.photos/seed/garden-lounge-terras/800/450"
+image: "https://media.s-bol.com/mogrr6lqrZWr/wmlm41r/550x550.jpg"
 ---
 
 Je koopt een mooie loungeset op Bol, zet hem op je terras, en in mei ziet het er al niet meer uit. De kussens zijn groen van het slib, het frame roest, en je voelt je beetgenomen. Ik ook, totdat ik erachter kwam wat je echt nodig hebt om daar niet in te trappen.

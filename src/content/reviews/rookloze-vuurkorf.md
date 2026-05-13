@@ -7,7 +7,7 @@ rating: 4
 date: "2026-05-12"
 bolUrl: "https://partnerprogramma.bol.com/click/click?p=1&t=url&s=1519838&url=https%3A%2F%2Fwww.bol.com%2Fnl%2Fs%2F%3Fq%3Drookloze%20vuurkorf"
 amazonUrl: "https://www.amazon.nl/s?k=rookloze%20vuurkorf&language=nl_NL"
-image: "https://picsum.photos/seed/campfire-outdoor/800/450"
+image: "https://media.s-bol.com/xDqM7BPlVjwl/N9OBRv2/550x550.jpg"
 ---
 
 Je hebt eindelijk die ene plek in de tuin gevonden waar je 's avonds lekker kan zitten, maar zodra je een vuurtje aansteekt gaat de wind precies jouw kant op. Of erger: je buren gaan klagen over de rook die in hun tuin drijft. Dan denk je: waarom bestaan rookloze vuurkorven eigenlijk nog niet standaard?

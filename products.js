@@ -10,7 +10,7 @@ export const products = [
     rating: 4,
     bolQuery: 'rookloze vuurkorf',
     amazonQuery: 'rookloze vuurkorf',
-    image: 'https://picsum.photos/seed/campfire-outdoor/800/450',
+    image: 'https://media.s-bol.com/xDqM7BPlVjwl/N9OBRv2/550x550.jpg',
     description: 'Een vuurkorf die nauwelijks rook produceert, ideaal voor de tuin zonder buren te ergeren.',
     context: `
 Het is mei, het terrasseizoen gaat beginnen. Mensen willen buiten zitten bij het vuur maar
@@ -29,7 +29,7 @@ bio-ethanol buitenhaard (geen rook maar ook weinig warmte).
     rating: 4,
     bolQuery: 'robotmaaier',
     amazonQuery: 'robotmaaier kleine tuin',
-    image: 'https://picsum.photos/seed/robot-lawn-garden/800/450',
+    image: 'https://media.s-bol.com/751DAjMoN3pj/KZQPrZn/550x540.jpg',
     description: 'Laat je gras automatisch bijhouden, zonder elke week achter een maaier aan te lopen.',
     context: `
 Voorjaar: gras groeit snel, iedereen wil dit automatiseren.
@@ -48,7 +48,7 @@ Duurdere zijn draadloos. De meeste mensen willen gewoon iets dat werkt voor een 
     rating: 4,
     bolQuery: 'loungeset tuin',
     amazonQuery: 'loungeset tuin buiten',
-    image: 'https://picsum.photos/seed/garden-lounge-terras/800/450',
+    image: 'https://media.s-bol.com/mogrr6lqrZWr/wmlm41r/550x550.jpg',
     description: 'Comfortabele loungeset voor het terras, en hoe je voorkomt dat je na één seizoen zit te roesten.',
     context: `
 Elk voorjaar opnieuw: mensen kopen een goedkope loungeset en zijn teleurgesteld na één seizoen.
@@ -67,7 +67,7 @@ Merken om naar te kijken: Hartman, Taste by 4 Seasons, of goede Bol-sets van Roy
     rating: 5,
     bolQuery: 'kamado bbq',
     amazonQuery: 'kamado grill keramisch',
-    image: 'https://picsum.photos/seed/bbq-grill-kamado/800/450',
+    image: 'https://media.s-bol.com/OLqQG6X211OY/nx3nR64/535x840.jpg',
     description: 'Keramische kamado grill, waarom iedereen erover praat en of je er echt een moet hebben.',
     context: `
 BBQ seizoen loopt op volle toeren in mei/juni. Kamado-grills (Big Green Egg, Kamado Joe,
@@ -87,7 +87,7 @@ of roken. Goede instapper: Patton Kamado (€300-400).
     rating: 4,
     bolQuery: 'zweefparasol',
     amazonQuery: 'zweefparasol tuin',
-    image: 'https://picsum.photos/seed/parasol-garden-sun/800/450',
+    image: 'https://media.s-bol.com/85BOvQoxrkzo/86XBJXj/550x412.jpg',
     description: 'Hoe je een zweefparasol kiest die de eerste windstoot overleeft.',
     context: `
 Meest teruggekochte product in de zomer: een parasol die kapot waait na de eerste storm.
@@ -106,7 +106,7 @@ overleeft Hollands weer beter. Let op: zet hem altijd weg als het gaat waaien.
     rating: 3,
     bolQuery: 'solar tuinverlichting set',
     amazonQuery: 'solar tuinverlichting buiten',
-    image: 'https://picsum.photos/seed/garden-lights-solar/800/450',
+    image: 'https://media.s-bol.com/YGx36JZBZg4n/G5zVLD7/550x550.jpg',
     description: 'Solar tuinverlichting klinkt ideaal, maar de helft werkt na één zomer niet meer.',
     context: `
 Populair cadeau en goedkoop instapproduct. Maar de kwaliteit verschilt enorm.
@@ -125,7 +125,7 @@ niet voor echte verlichting. Verwacht geen wonderen van een set van €20.
     rating: 3,
     bolQuery: 'opblaasbare jacuzzi buiten',
     amazonQuery: 'opblaasbare jacuzzi hot tub',
-    image: 'https://picsum.photos/seed/hot-tub-outdoor/800/450',
+    image: 'https://media.s-bol.com/BW9RV6By7Xyk/oYwZ3WY/550x597.jpg',
     description: 'Elke zomer nieuw populair, elke zomer dezelfde problemen. Wat je moet weten voor je er een koopt.',
     context: `
 De opblaasbare hot tub is elk jaar een hit. Goedkoopste optie: Lay-Z-Spa (€200-400),
@@ -146,7 +146,7 @@ Beste keuze: Lay-Z-Spa Helsinki of AirJet-serie, robuuster dan de goedkoopste Be
     rating: 4,
     bolQuery: 'accu grasmaaier',
     amazonQuery: 'accu grasmaaier tuin',
-    image: 'https://picsum.photos/seed/lawn-mower-grass/800/450',
+    image: 'https://media.s-bol.com/m8gMwvqz2Jvp/zv0rP15/550x575.jpg',
     description: 'De robotmaaier is te duur, de benzineverser te veel gedoe. Een goede accusmaaier is gewoon genoeg.',
     context: `
 De meeste mensen in Nederland hebben een tuin van 30-150m2. Geen robot nodig, geen benzine.
