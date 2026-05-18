@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EersteTest.nl — SEO Cluster Map</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', sans-serif; background: #0f1117; color: #e8eaf0; min-height: 100vh; }
+
+  header { padding: 32px 40px 24px; border-bottom: 1px solid #1e2130; }
+  header h1 { font-size: 22px; font-weight: 700; color: #fff; }
+  header p { font-size: 13px; color: #6b7280; margin-top: 4px; }
+
+  .stats { display: flex; gap: 24px; padding: 20px 40px; border-bottom: 1px solid #1e2130; flex-wrap: wrap; }
+  .stat { background: #1a1d2e; border-radius: 8px; padding: 14px 20px; min-width: 120px; }
+  .stat-value { font-size: 28px; font-weight: 800; color: #fff; line-height: 1; }
+  .stat-label { font-size: 11px; color: #6b7280; margin-top: 4px; text-transform: uppercase; letter-spacing: 0.06em; }
+
+  .clusters { padding: 32px 40px; display: flex; flex-direction: column; gap: 32px; }
+
+  .cluster-card { background: #1a1d2e; border-radius: 12px; overflow: hidden; border: 1px solid #252840; }
+  .cluster-header { padding: 20px 24px; display: flex; align-items: center; gap: 16px; border-bottom: 1px solid #252840; }
+  .cluster-dot { width: 14px; height: 14px; border-radius: 50%; flex-shrink: 0; }
+  .cluster-title-group { flex: 1; }
+  .cluster-name { font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; }
+  .cluster-subtitle { font-size: 13px; color: #9ca3af; margin-top: 2px; }
+  .cluster-badge { font-size: 11px; padding: 3px 10px; border-radius: 20px; font-weight: 600; background: rgba(255,255,255,0.07); color: #9ca3af; white-space: nowrap; }
+
+  .pillar-row { padding: 16px 24px; border-bottom: 1px solid #252840; display: flex; align-items: center; gap: 12px; background: rgba(255,255,255,0.02); }
+  .pillar-icon { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; padding: 3px 8px; border-radius: 4px; flex-shrink: 0; }
+  .pillar-title { font-size: 14px; font-weight: 600; color: #fff; }
+  .pillar-meta { font-size: 12px; color: #6b7280; margin-top: 2px; }
+  .pillar-words { margin-left: auto; font-size: 11px; color: #6b7280; white-space: nowrap; }
+
+  .spokes { padding: 0; }
+  .spoke-row { padding: 12px 24px 12px 40px; border-bottom: 1px solid #1e2130; display: flex; align-items: center; gap: 12px; transition: background 0.15s; cursor: default; }
+  .spoke-row:last-child { border-bottom: none; }
+  .spoke-row:hover { background: rgba(255,255,255,0.03); }
+  .spoke-connector { width: 20px; height: 1px; background: #2d3152; flex-shrink: 0; position: relative; }
+  .spoke-connector::before { content: ''; position: absolute; left: -4px; top: -3px; width: 7px; height: 7px; border-radius: 50%; background: #2d3152; }
+  .spoke-title { font-size: 13px; color: #c9cce0; flex: 1; }
+  .spoke-keyword { font-size: 11px; color: #4b5563; margin-top: 1px; font-style: italic; }
+  .intent-badge { font-size: 10px; padding: 2px 7px; border-radius: 3px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; flex-shrink: 0; }
+  .intent-transactioneel { background: #14532d; color: #4ade80; }
+  .intent-informatief { background: #1e3a5f; color: #60a5fa; }
+  .intent-commercieel { background: #4c1d95; color: #a78bfa; }
+  .status-upgrade { font-size: 10px; padding: 2px 7px; border-radius: 3px; font-weight: 600; background: #451a03; color: #fb923c; flex-shrink: 0; }
+  .status-nieuw { font-size: 10px; padding: 2px 7px; border-radius: 3px; font-weight: 600; background: #1e293b; color: #64748b; flex-shrink: 0; }
+  .spoke-words { font-size: 11px; color: #374151; white-space: nowrap; }
+
+  .link-matrix { padding: 32px 40px; border-top: 1px solid #1e2130; }
+  .link-matrix h2 { font-size: 16px; font-weight: 700; margin-bottom: 20px; }
+  .matrix-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px; }
+  .matrix-card { background: #1a1d2e; border-radius: 8px; padding: 16px; border: 1px solid #252840; }
+  .matrix-card h3 { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: #6b7280; margin-bottom: 10px; }
+  .matrix-card ul { list-style: none; display: flex; flex-direction: column; gap: 6px; }
+  .matrix-card li { font-size: 12px; color: #9ca3af; display: flex; align-items: flex-start; gap: 8px; }
+  .matrix-card li::before { content: '→'; color: #374151; flex-shrink: 0; margin-top: 1px; }
+
+  .timeline { padding: 32px 40px; border-top: 1px solid #1e2130; }
+  .timeline h2 { font-size: 16px; font-weight: 700; margin-bottom: 20px; }
+  .timeline-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 16px; }
+  .timeline-block { background: #1a1d2e; border-radius: 8px; padding: 16px; border: 1px solid #252840; }
+  .timeline-block h3 { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 10px; }
+  .timeline-block ul { list-style: none; display: flex; flex-direction: column; gap: 6px; }
+  .timeline-block li { font-size: 12px; color: #9ca3af; display: flex; align-items: flex-start; gap: 8px; }
+  .timeline-block li::before { content: '✓'; color: #374151; flex-shrink: 0; }
+  .timeline-block.urgent { border-color: #f97316; }
+  .timeline-block.urgent h3 { color: #f97316; }
+
+  .bol-box { margin: 0 40px 32px; background: #14532d; border-radius: 10px; padding: 20px 24px; border: 1px solid #166534; }
+  .bol-box h3 { font-size: 14px; font-weight: 700; color: #4ade80; margin-bottom: 8px; }
+  .bol-box p { font-size: 13px; color: #86efac; }
+  .bol-checklist { margin-top: 12px; display: flex; flex-wrap: wrap; gap: 8px; }
+  .bol-item { font-size: 12px; padding: 4px 12px; border-radius: 20px; background: rgba(74,222,128,0.1); color: #4ade80; border: 1px solid rgba(74,222,128,0.2); }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>EersteTest.nl — SEO Cluster Map</h1>
+  <p>Tuin & Outdoor niche · Hub-and-spoke architectuur · Gegenereerd 13 mei 2026</p>
+</header>
+
+<div class="stats">
+  <div class="stat"><div class="stat-value">38</div><div class="stat-label">Totaal artikelen</div></div>
+  <div class="stat"><div class="stat-value">5</div><div class="stat-label">Clusters</div></div>
+  <div class="stat"><div class="stat-value">5</div><div class="stat-label">Pillar pages</div></div>
+  <div class="stat"><div class="stat-value">25</div><div class="stat-label">Spoke posts</div></div>
+  <div class="stat"><div class="stat-value">8</div><div class="stat-label">Te upgraden</div></div>
+  <div class="stat"><div class="stat-value">~52K</div><div class="stat-label">Totaal woorden</div></div>
+</div>
+
+<div class="clusters">
+
+  <!-- Cluster 1 -->
+  <div class="cluster-card">
+    <div class="cluster-header">
+      <div class="cluster-dot" style="background:#22c55e"></div>
+      <div class="cluster-title-group">
+        <div class="cluster-name" style="color:#22c55e">Cluster 1 — Gazon & Maaiers</div>
+        <div class="cluster-subtitle">Grasmaaiers, robotmaaiers, accu-maaiers</div>
+      </div>
+      <div class="cluster-badge">6 posts</div>
+    </div>
+    <div class="pillar-row">
+      <div class="pillar-icon" style="background:#14532d;color:#4ade80">PILLAR</div>
+      <div>
+        <div class="pillar-title">De Beste Grasmaaier 2026: Accu, Robot of Benzine?</div>
+        <div class="pillar-meta">beste grasmaaier · comparison · 3000 woorden</div>
+      </div>
+      <div class="pillar-words">3.000w</div>
+    </div>
+    <div class="spokes">
+      <div class="spoke-row">
+        <div class="spoke-connector"></div>
+        <div class="flex-1" style="flex:1">
+          <div class="spoke-title">De Beste Accu Grasmaaier 2026</div>
+          <div class="spoke-keyword">beste accu grasmaaier</div>
+        </div>
+        <div class="intent-badge intent-transactioneel">Transactioneel</div>
+        <div class="status-upgrade">Upgrade</div>
+        <div class="spoke-words">1.500w</div>
+      </div>
+      <div class="spoke-row">
+        <div class="spoke-connector"></div>
+        <div style="flex:1">
+          <div class="spoke-title">De Beste Robotmaaier 2026 (ook kleine tuin)</div>
+          <div class="spoke-keyword">beste robotmaaier kleine tuin</div>
+        </div>
+        <div class="intent-badge intent-transactioneel">Transactioneel</div>
+        <div class="status-upgrade">Upgrade</div>
+        <div class="spoke-words">1.500w</div>
+      </div>
+      <div class="spoke-row">
+        <div class="spoke-connector"></div>
+        <div style="flex:1">
+          <div class="spoke-title">Hoe Kies Je een Robotmaaier? De Complete Gids</div>
+          <div class="spoke-keyword">hoe kies je een robotmaaier</div>
+        </div>
+        <div class="intent-badge intent-informatief">Informatief</div>
+        <div class="status-nieuw">Nieuw</div>
+        <div class="spoke-words">1.400w</div>
+      </div>
+      <div class="spoke-row">
+        <div class="spoke-connector"></div>
+        <div style="flex:1">
+          <div class="spoke-title">Robotmaaier Zonder Grensdraad: Zijn Ze Goed?</div>
+          <div class="spoke-keyword">robotmaaier zonder grensdraad</div>
+        </div>
+        <div class="intent-badge intent-informatief">Informatief</div>
+        <div class="status-nieuw">Nieuw</div>
+        <div class="spoke-words">1.200w</div>
+      </div>
+      <div class="spoke-row">
+        <div class="spoke-connector"></div>
+        <div style="flex:1">
+          <div class="spoke-title">Robotmaaier Onderhoud: Zo Houd Je Hem in Topvorm</div>
+          <div class="spoke-keyword">robotmaaier onderhoud tips</div>
+        </div>
+        <div class="intent-badge intent-informatief">Informatief</div>
+        <div class="status-nieuw">Nieuw</div>
+        <div class="spoke-words">1.200w</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Cluster 2 -->
+  <div class="cluster-card">
+    <div class="cluster-header">
+      <div class="cluster-dot" style="background:#f97316"></div>
+      <div class="cluster-title-group">
+        <div class="cluster-name" style="color:#f97316">Cluster 2 — BBQ & Vuurkorf</div>
+        <div class="cluster-subtitle">Kamado, houtskool, rookloze vuurkorf</div>
+      </div>
+      <div class="cluster-badge">6 posts</div>
+    </div>
+    <div class="pillar-row">
+      <div class="pillar-icon" style="background:#431407;color:#fb923c">PILLAR</div>
+      <div>
+        <div class="pillar-title">De Beste BBQ 2026: Houtskool, Gas of Kamado?</div>
+        <div class="pillar-meta">beste barbecue · comparison · 3000 woorden</div>
+      </div>
+      <div class="pillar-words">3.000w</div>
+    </div>
+    <div class="spokes">
+      <div class="spoke-row">
+        <div class="spoke-connector"></div>
+        <div style="flex:1">
+          <div class="spoke-title">De Beste Kamado BBQ 2026</div>
+          <div class="spoke-keyword">beste kamado bbq</div>
+        </div>
+        <div class="intent-badge intent-transactioneel">Transactioneel</div>
+        <div class="status-upgrade">Upgrade</div>
+        <div class="spoke-words">1.500w</div>
+      </div>
+      <div class="spoke-row">
+        <div class="spoke-connector"></div>
+        <div style="flex:1">
+          <div class="spoke-title">De Beste Rookloze Vuurkorf 2026</div>
+          <div class="spoke-keyword">beste rookloze vuurkorf</div>
+        </div>
+        <div class="intent-badge intent-transactioneel">Transactioneel</div>
+        <div class="status-upgrade">Upgrade</div>
+        <div class="spoke-words">1.500w</div>
+      </div>
+      <div class="spoke-row">
+        <div class="spoke-connector"></div>
+        <div style="flex:1">
+          <div class="spoke-title">Kamado vs Weber: Welke BBQ Wint?</div>
+          <div class="spoke-keyword">kamado vs weber barbecue</div>
+        </div>
+        <div class="intent-badge intent-commercieel">Commercieel</div>
+        <div class="status-nieuw">Nieuw</div>
+        <div class="spoke-words">1.400w</div>
+      </div>
+      <div class="spoke-row">
+        <div class="spoke-connector"></div>
+        <div style="flex:1">
+          <div class="spoke-title">Hoe Kies Je een Kamado BBQ? Alles Wat Je Moet Weten</div>
+          <div class="spoke-keyword">hoe kies je een kamado</div>
+        </div>
+        <div class="intent-badge intent-informatief">Informatief</div>
+        <div class="status-nieuw">Nieuw</div>
+        <div class="spoke-words">1.300w</div>
+      </div>
+      <div class="spoke-row">
+        <div class="spoke-connector"></div>
+        <div style="flex:1">
+          <div class="spoke-title">Rookloze Vuurkorf Tips: Zo Haal Je het Meeste Eruit</div>
+          <div class="spoke-keyword">rookloze vuurkorf tips gebruik</div>
+        </div>
+        <div class="intent-badge intent-informatief">Informatief</div>
+        <div class="status-nieuw">Nieuw</div>
+        <div class="spoke-words">1.200w</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Cluster 3 -->
+  <div class="cluster-card">
+    <div class="cluster-header">
+      <div class="cluster-dot" style="background:#a78bfa"></div>
+      <div class="cluster-title-group">
+        <div class="cluster-name" style="color:#a78bfa">Cluster 3 — Tuin Ontspanning</div>
+        <div class="cluster-subtitle">Loungesets, parasols, jacuzzi's</div>
+      </div>
+      <div class="cluster-badge">6 posts</div>
+    </div>
+    <div class="pillar-row">
+      <div class="pillar-icon" style="background:#2e1065;color:#a78bfa">PILLAR</div>
+      <div>
+        <div class="pillar-title">De Beste Tuinmeubelen 2026: Complete Koopgids</div>
+        <div class="pillar-meta">beste tuinmeubelen · ultimate-guide · 3000 woorden</div>
+      </div>
+      <div class="pillar-words">3.000w</div>
+    </div>
+    <div class="spokes">
+      <div class="spoke-row">
+        <div class="spoke-connector"></div>
+        <div style="flex:1">
+          <div class="spoke-title">De Beste Loungeset Tuin 2026</div>
+          <div class="spoke-keyword">beste loungeset tuin</div>
+        </div>
+        <div class="intent-badge intent-transactioneel">Transactioneel</div>
+        <div class="status-upgrade">Upgrade</div>
+        <div class="spoke-words">1.500w</div>
+      </div>
+      <div class="spoke-row">
+        <div class="spoke-connector"></div>
+        <div style="flex:1">
+          <div class="spoke-title">De Beste Zweefparasol 2026</div>
+          <div class="spoke-keyword">beste zweefparasol</div>
+        </div>
+        <div class="intent-badge intent-transactioneel">Transactioneel</div>
+        <div class="status-upgrade">Upgrade</div>
+        <div class="spoke-words">1.500w</div>
+      </div>
+      <div class="spoke-row">
+        <div class="spoke-connector"></div>
+        <div style="flex:1">
+          <div class="spoke-title">De Beste Opblaasbare Jacuzzi 2026</div>
+          <div class="spoke-keyword">beste opblaasbare jacuzzi</div>
+        </div>
+        <div class="intent-badge intent-transactioneel">Transactioneel</div>
+        <div class="status-upgrade">Upgrade</div>
+        <div class="spoke-words">1.500w</div>
+      </div>
+      <div class="spoke-row">
+        <div class="spoke-connector"></div>
+        <div style="flex:1">
+          <div class="spoke-title">Hoe Kies Je de Perfecte Loungeset? Materialen Vergeleken</div>
+          <div class="spoke-keyword">loungeset kopen waar op letten</div>
+        </div>
+        <div class="intent-badge intent-informatief">Informatief</div>
+        <div class="status-nieuw">Nieuw</div>
+        <div class="spoke-words">1.300w</div>
+      </div>
+      <div class="spoke-row">
+        <div class="spoke-connector"></div>
+        <div style="flex:1">
+          <div class="spoke-title">Opblaasbare Jacuzzi vs Vaste Jacuzzi: Wat Past Bij Jou?</div>
+          <div class="spoke-keyword">opblaasbare vs vaste jacuzzi</div>
+        </div>
+        <div class="intent-badge intent-informatief">Informatief</div>
+        <div class="status-nieuw">Nieuw</div>
+        <div class="spoke-words">1.200w</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Cluster 4 -->
+  <div class="cluster-card">
+    <div class="cluster-header">
+      <div class="cluster-dot" style="background:#facc15"></div>
+      <div class="cluster-title-group">
+        <div class="cluster-name" style="color:#facc15">Cluster 4 — Tuin Tech & Verlichting</div>
+        <div class="cluster-subtitle">Solar, slimme tuingadgets, verlichting</div>
+      </div>
+      <div class="cluster-badge">6 posts</div>
+    </div>
+    <div class="pillar-row">
+      <div class="pillar-icon" style="background:#422006;color:#facc15">PILLAR</div>
+      <div>
+        <div class="pillar-title">Slimme Tuintechnologie 2026: De Beste Gadgets voor je Tuin</div>
+        <div class="pillar-meta">slimme tuin gadgets · listicle · 2500 woorden</div>
+      </div>
+      <div class="pillar-words">2.500w</div>
+    </div>
+    <div class="spokes">
+      <div class="spoke-row">
+        <div class="spoke-connector"></div>
+        <div style="flex:1">
+          <div class="spoke-title">De Beste Solar Tuinverlichting 2026</div>
+          <div class="spoke-keyword">beste solar tuinverlichting</div>
+        </div>
+        <div class="intent-badge intent-transactioneel">Transactioneel</div>
+        <div class="status-upgrade">Upgrade</div>
+        <div class="spoke-words">1.500w</div>
+      </div>
+      <div class="spoke-row">
+        <div class="spoke-connector"></div>
+        <div style="flex:1">
+          <div class="spoke-title">De Beste Buitenspot op Zonne-energie 2026</div>
+          <div class="spoke-keyword">beste buitenlamp zonne energie</div>
+        </div>
+        <div class="intent-badge intent-transactioneel">Transactioneel</div>
+        <div class="status-nieuw">Nieuw</div>
+        <div class="spoke-words">1.300w</div>
+      </div>
+      <div class="spoke-row">
+        <div class="spoke-connector"></div>
+        <div style="flex:1">
+          <div class="spoke-title">Hoe Werkt Solar Tuinverlichting? Alles Wat Je Moet Weten</div>
+          <div class="spoke-keyword">hoe werkt solar tuinverlichting</div>
+        </div>
+        <div class="intent-badge intent-informatief">Informatief</div>
+        <div class="status-nieuw">Nieuw</div>
+        <div class="spoke-words">1.200w</div>
+      </div>
+      <div class="spoke-row">
+        <div class="spoke-connector"></div>
+        <div style="flex:1">
+          <div class="spoke-title">Solar Tuinverlichting Plaatsen: Stap-voor-Stap Handleiding</div>
+          <div class="spoke-keyword">solar tuinverlichting plaatsen</div>
+        </div>
+        <div class="intent-badge intent-informatief">Informatief</div>
+        <div class="status-nieuw">Nieuw</div>
+        <div class="spoke-words">1.100w</div>
+      </div>
+      <div class="spoke-row">
+        <div class="spoke-connector"></div>
+        <div style="flex:1">
+          <div class="spoke-title">De Beste Slimme Tuinsproeier 2026</div>
+          <div class="spoke-keyword">beste tuinsproeier automatisch</div>
+        </div>
+        <div class="intent-badge intent-transactioneel">Transactioneel</div>
+        <div class="status-nieuw">Nieuw</div>
+        <div class="spoke-words">1.300w</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Cluster 5 -->
+  <div class="cluster-card">
+    <div class="cluster-header">
+      <div class="cluster-dot" style="background:#38bdf8"></div>
+      <div class="cluster-title-group">
+        <div class="cluster-name" style="color:#38bdf8">Cluster 5 — Robot Stofzuiger</div>
+        <div class="cluster-subtitle">Hoog zoekvolume, indoor, snelste weg naar clicks</div>
+      </div>
+      <div class="cluster-badge">6 posts</div>
+    </div>
+    <div class="pillar-row">
+      <div class="pillar-icon" style="background:#0c4a6e;color:#38bdf8">PILLAR</div>
+      <div>
+        <div class="pillar-title">De Beste Robot Stofzuiger 2026: Alles Wat Je Moet Weten</div>
+        <div class="pillar-meta">beste robot stofzuiger · ultimate-guide · 3500 woorden</div>
+      </div>
+      <div class="pillar-words">3.500w</div>
+    </div>
+    <div class="spokes">
+      <div class="spoke-row">
+        <div class="spoke-connector"></div>
+        <div style="flex:1">
+          <div class="spoke-title">De Beste Robot Stofzuiger met Dweilfunctie 2026</div>
+          <div class="spoke-keyword">beste robot stofzuiger dweilfunctie</div>
+        </div>
+        <div class="intent-badge intent-transactioneel">Transactioneel</div>
+        <div class="status-nieuw">Nieuw</div>
+        <div class="spoke-words">1.500w</div>
+      </div>
+      <div class="spoke-row">
+        <div class="spoke-connector"></div>
+        <div style="flex:1">
+          <div class="spoke-title">De Beste Budget Robot Stofzuiger 2026</div>
+          <div class="spoke-keyword">goedkope robot stofzuiger</div>
+        </div>
+        <div class="intent-badge intent-transactioneel">Transactioneel</div>
+        <div class="status-nieuw">Nieuw</div>
+        <div class="spoke-words">1.400w</div>
+      </div>
+      <div class="spoke-row">
+        <div class="spoke-connector"></div>
+        <div style="flex:1">
+          <div class="spoke-title">Hoe Kies Je een Robot Stofzuiger? De Ultieme Gids</div>
+          <div class="spoke-keyword">robot stofzuiger kopen tips</div>
+        </div>
+        <div class="intent-badge intent-informatief">Informatief</div>
+        <div class="status-nieuw">Nieuw</div>
+        <div class="spoke-words">1.400w</div>
+      </div>
+      <div class="spoke-row">
+        <div class="spoke-connector"></div>
+        <div style="flex:1">
+          <div class="spoke-title">Robot Stofzuiger voor Huisdieren: Top 5 van 2026</div>
+          <div class="spoke-keyword">robot stofzuiger huisdieren</div>
+        </div>
+        <div class="intent-badge intent-commercieel">Commercieel</div>
+        <div class="status-nieuw">Nieuw</div>
+        <div class="spoke-words">1.300w</div>
+      </div>
+      <div class="spoke-row">
+        <div class="spoke-connector"></div>
+        <div style="flex:1">
+          <div class="spoke-title">Robot Stofzuiger Onderhoud: Zo Werkt Hij Altijd Optimaal</div>
+          <div class="spoke-keyword">robot stofzuiger onderhoud</div>
+        </div>
+        <div class="intent-badge intent-informatief">Informatief</div>
+        <div class="status-nieuw">Nieuw</div>
+        <div class="spoke-words">1.200w</div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="bol-box">
+  <h3>Wanneer aanmelden bij Bol.com?</h3>
+  <p>Minimale drempel voor een succesvolle aanmelding:</p>
+  <div class="bol-checklist">
+    <div class="bol-item">✓ 15+ artikelen live</div>
+    <div class="bol-item">○ Pillar Cluster 2 (BBQ) live</div>
+    <div class="bol-item">○ Pillar Cluster 3 (Tuinmeubelen) live</div>
+    <div class="bol-item">○ 8 upgrades gedaan</div>
+    <div class="bol-item">○ Foto Niek op Over-pagina</div>
+    <div class="bol-item">○ Contactinfo toegevoegd</div>
+  </div>
+</div>
+
+<div class="timeline">
+  <h2>Implementatievolgorde</h2>
+  <div class="timeline-grid">
+    <div class="timeline-block urgent">
+      <h3>Week 1-2: Upgrades (snel live)</h3>
+      <ul>
+        <li>Rookloze vuurkorf upgraden</li>
+        <li>Kamado BBQ upgraden</li>
+        <li>Loungeset upgraden</li>
+        <li>Zweefparasol upgraden</li>
+        <li>Opblaasbare jacuzzi upgraden</li>
+        <li>Solar verlichting upgraden</li>
+        <li>Robotmaaier upgraden</li>
+        <li>Accu grasmaaier upgraden</li>
+      </ul>
+    </div>
+    <div class="timeline-block">
+      <h3>Week 3-4: Pillar pages</h3>
+      <ul>
+        <li>Beste BBQ 2026 (pillar)</li>
+        <li>Beste Tuinmeubelen 2026 (pillar)</li>
+        <li>Beste Robot Stofzuiger 2026 (pillar)</li>
+        <li>Beste Grasmaaier 2026 (pillar)</li>
+        <li>Slimme Tuintechnologie (pillar)</li>
+      </ul>
+    </div>
+    <div class="timeline-block">
+      <h3>Week 5-6: Informatief</h3>
+      <ul>
+        <li>Hoe kies je een robotmaaier?</li>
+        <li>Hoe kies je een kamado?</li>
+        <li>Hoe kies je een loungeset?</li>
+        <li>Hoe kies je een robot stofzuiger?</li>
+        <li>Hoe werkt solar verlichting?</li>
+      </ul>
+    </div>
+    <div class="timeline-block">
+      <h3>Week 7-8: Volume</h3>
+      <ul>
+        <li>Kamado vs Weber</li>
+        <li>Robotmaaier zonder grensdraad</li>
+        <li>Robot stofzuiger huisdieren</li>
+        <li>Budget robot stofzuiger</li>
+        <li>Robot stofzuiger met dweil</li>
+        <li>Overige spokes</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
